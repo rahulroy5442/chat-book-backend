@@ -3,8 +3,8 @@ Step:1
 
     connectionURL='Your DB connection string'
     JWT_KEY='Your key'
-    CLIENT_PORT=http://localhost:8000
-    PORT=8080
+    CLIENT_PORT=http://localhost:YOUR CLIENT PORT
+    PORT=PORT OF THE BACK END
 
 Step:2
 
