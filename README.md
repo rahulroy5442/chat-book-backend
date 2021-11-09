@@ -10,7 +10,7 @@ Step:2
 
 Install all package with 
 
-git install
+npm install
 
 *Note
 Only backend is completed for rest application visit chat-book-frontend which was created with React
