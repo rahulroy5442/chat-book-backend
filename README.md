@@ -13,7 +13,7 @@ Step:2
 
 Step:3
   Start the Application with
-    npm start
+    npm run dev
   
 *Note
 Only backend is completed for rest application visit chat-book-frontend which was created with React
