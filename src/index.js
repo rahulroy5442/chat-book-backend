@@ -1,15 +1,24 @@
 
 //const app=express()
-const UserR=require('./Routes/User')
+const UserRouter=require('./Routes/User')
+const LoginRouter=require('./Routes/Login')
+const SignUpRouter=require('./Routes/Signup')
+const {app,server}=require('./chat/server')
+const express=require('express')
+var rootRouter = express.Router();
+
 require('./DBconfig/DBruner')
 
-const {app,server}=require('./chat/server')
 
-const port=process.env.PORT
+
+rootRouter.use('/login',LoginRouter)
+rootRouter.use('/signup',SignUpRouter)
+rootRouter.use('/user',UserRouter)
+
 
 app.use(new require('express').json())
-app.use(UserR)
+app.use('/',rootRouter)
 
-server.listen(port,()=>{
-  console.log("Server connected at"+port)
+server.listen(process.env.PORT,()=>{
+  console.log("Server connected at"+process.env.PORT)
 })
