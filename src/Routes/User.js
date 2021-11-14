@@ -1,13 +1,13 @@
 const express=require('express')
-const app=express()
+
 const router=new express.Router()
 
 const Users=require('../DBconfig/User/User')
 const TempUser=require('../DBconfig/User/tempUser')
 const {auth,accountVerification}=require('../Middleware/Auth')
-const cors=require('cors')
+
 const Chats=require('../DBconfig/Chat/chat')
-const {welcome,bye}=require('../mailsender/sendgrid')
+
 
 router.post('/user',async(req,res)=>{
  /*  const tConvert =(time)=> {
