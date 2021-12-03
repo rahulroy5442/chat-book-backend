@@ -8,7 +8,14 @@ const express=require('express')
 var rootRouter = express.Router();
 
 require('./DBconfig/DBruner')
-
+/*
+HJDUJ
+jdhjdj
+jdfhjfh
+fhjfhf
+jfhf
+jhdfhfjfifji
+*/
 
 
 rootRouter.use('/login',LoginRouter)
