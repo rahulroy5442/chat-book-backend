@@ -1,3 +1,7 @@
 /DataBase
 /node_modules
+<<<<<<< HEAD
 /SecretKey.env
+=======
+/SecretKey.env
+>>>>>>> 67765c9ff59a211508facd92e3591e32610e9ca6
