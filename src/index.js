@@ -10,11 +10,7 @@ var rootRouter = express.Router();
 require('./DBconfig/DBruner')
 /*
 HJDUJ
-jdhjdj
-jdfhjfh
-fhjfhf
-jfhf
-jhdfhfjfifji
+
 */
 
 
