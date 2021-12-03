@@ -29,7 +29,7 @@ io.use(function(socket,next)
             jwt.verify(socket.handshake.auth.token,process.env.JWT_KEY,function(error,decode){
                 if(error)
                 {
-                 
+                 console.log("Error",error.message)
                     return next(new Error(
                         {error:error.message}
                     ))
@@ -42,8 +42,8 @@ io.use(function(socket,next)
         }
         else
         {
-          
-                next()
+        
+               return next(new Error({error:"Please provide authentication token"}))
             
           
             
